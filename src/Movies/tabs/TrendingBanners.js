@@ -16,7 +16,8 @@ export default class TrendingBanners extends React.Component{
     }
 
     componentDidMount = async () => {
-        const banners = await Api.get(`/trending/movie/day?api_key=${ApiKey}&language=en-US&page=1`)
+        const lang = global.props.lang
+        const banners = await Api.get(`/trending/movie/day?api_key=${ApiKey}&language=${lang}&page=1`)
         if(banners.data.results.length){
             this.setState({
                 banners: banners.data.results,

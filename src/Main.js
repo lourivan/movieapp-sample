@@ -56,17 +56,7 @@ export default class Main extends React.Component {
                         options={{
                             tabBarLabel: 'Filmes',
                             tabBarIcon: ({ color, size }) => (
-                                <Icon name="home" size={24} color={color} />
-                            )
-                        }}
-                    />
-                    <Tab.Screen 
-                        name="Series" 
-                        component={Series} 
-                        options={{
-                            tabBarLabel: 'Séries',
-                            tabBarIcon: ({ color, size }) => (
-                                <Icon name="card-giftcard" size={24} color={color} />
+                                <Icon name="movie" size={24} color={color} />
                             )
                         }}
                     />
